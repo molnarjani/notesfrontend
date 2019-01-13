@@ -2,8 +2,8 @@ version: '3.5'
 
 services:
 
-  notesapp:
-    container_name: notesapp
+  notesfrontend:
+    container_name: notesfrontend  
     build:
       context: .
       dockerfile: Dockerfile
