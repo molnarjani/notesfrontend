@@ -4,6 +4,7 @@ services:
 
   notesfrontend:
     container_name: notesfrontend  
+    command: "npm start"
     build:
       context: .
       dockerfile: Dockerfile
@@ -12,5 +13,3 @@ services:
       - '/usr/src/app/node_modules'
     ports:
       - '3000:3000'
-    environment:
-      - NODE_ENV=development
