@@ -3,4 +3,4 @@ version: '3.5'
 services:
 
   notesfrontend:
-    command: "npm run build; serve -s build"
+    command: "bash -c \"npm run build; serve -s build -l tcp://0.0.0.0:3000\""
